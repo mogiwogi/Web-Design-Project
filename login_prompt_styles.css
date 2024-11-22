@@ -1,0 +1,55 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #181818, #8b1212); /* Vibrant gradient background */
+    color: #333;
+}
+
+/* Container for the message box */
+.container {
+    text-align: center;
+    background-color: white;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+}
+
+/* Heading Style */
+.message-box h1 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* Paragraph Style */
+.message-box p {
+    font-size: 1rem;
+    margin-bottom: 25px;
+    color: #555;
+}
+
+/* Login Button */
+.login-button {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.login-button:hover {
+    background-color: #555;
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}

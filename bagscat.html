@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bags Collection</title>
+  <link rel="stylesheet" href="style_category.css">
+</head>
+<body>
+
+  <!-- Top Notification Bar -->
+  <div class="top-notification">
+    GET 20% DISCOUNT WHEN YOU <a href="signup.html" class="signup-link">SIGN UP</a>!
+  </div>
+
+  <!-- Header Section -->
+  <header>
+    <div class="header-left">
+      <div class="logo">
+        <a href="index.html">
+          <img src="arkived.png" alt="Logo">
+        </a>
+      </div>
+    </div>
+
+    <!-- Navigation Section with Dropdown -->
+    <nav>
+      <ul>
+        <li class="dropdown">
+          <a href="#">Categories</a>
+          <ul class="dropdown-menu">
+            <li><a href="jacketscat.html">Jackets</a></li>
+            <li><a href="bottomcat.html">Bottoms</a></li>
+            <li><a href="accessoriescat.html">Accessories</a></li>
+            <li><a href="walletscat.html">Wallets</a></li>
+            <li><a href="bagscat.html">Bags</a></li>
+          </ul>
+        </li>
+        <li><a href="new_arrivals.html">New Arrivals</a></li>
+        <li><a href="custom_design.html">Custom Design</a></li>
+        <li><a href="about.html">About Us</a></li>
+      </ul>
+    </nav>
+
+    <!-- Cart and Login Section -->
+    <div class="right-container">
+      <a href="cart.html" class="cart-icon">
+        <img src="Front Page images/cart.png" alt="Cart">
+        <span id="cart-count">0</span>
+      </a>
+      <a href="loginpage.html" class="login-avatar">
+        <img src="Front Page images/avatar.png" alt="Login Avatar">
+      </a>
+    </div>
+  </header>
+
+  <!-- Collection Image Section -->
+  <section class="collection-image-section">
+    <div class="collection-header-title">Collections</div>
+    <div class="collection-image-slot">
+      <img src="collection.jpeg" alt="Collection Image" class="collection-image">
+    </div>
+  </section>
+
+  <!-- Product Grid -->
+  <section class="image-grid">
+    <div class="grid-item">
+      <img src="Bags Category/Bag 1.jpg" alt="Jacket 1">
+      <h2>Jet Red 01 (One of One)</h2>
+      <p class="price">MYR999.99</p>
+      <a href="product.html?category=bags&productId=1" class="view-details">View Details</a>
+      <button class="add-to-cart" onclick="addToCart('Jet Red 01 (One of One)', 999.99, 'Bags Category/Bag 1.jpg')">Add to Cart</button>
+    </div>
+
+    <div class="grid-item">
+      <img src="Bags Category/Bag 2.jpg" alt="Jacket 2">
+      <h2>Jet Black 02 (Limited Edition)</h2>
+      <p class="price">MYR599.99</p>
+      <p><a href="product.html?category=bags&productId=2" class="view-details">View Details</a></p>
+      <button class="add-to-cart" onclick="addToCart('Jet Black 02 (Limited Edition)', 599.99, 'Bags Category/Bag 2.jpg')">Add to Cart</button>
+    </div>
+
+    <div class="grid-item">
+      <img src="Bags Category/Bag 3.jpg" alt="Jacket 3">
+      <h2>KILL! Studs</h2>
+      <p class="price">MYR399.99</p>
+      <p><a href="product.html?category=bags&productId=3" class="view-details">View Details</a></p>
+      <button class="add-to-cart" onclick="addToCart('KILL! Studs', 399.99, 'Bags Category/Bag 3.jpg')">Add to Cart</button>
+    </div>
+
+    <div class="grid-item">
+      <img src="Bags Category/Bag 4.jpg" alt="Jacket 4">
+      <h2>Killer</h2>
+      <p class="price">MYR499.99</p>
+      <p><a href="product.html?category=bags&productId=4" class="view-details">View Details</a></p>
+      <button class="add-to-cart" onclick="addToCart('Killer', 499.99, 'Bags Category/Bag 4.jpg')">Add to Cart</button>
+    </div>
+
+    <div class="grid-item">
+      <img src="Bags Category/Bag 5.jpg" alt="Product 5">
+      <h2>Pure Scorpion</h2>
+      <p class="price">MYR499.99</p>
+      <p><a href="product.html?category=bags&productId=5" class="view-details">View Details</a></p>
+      <button class="add-to-cart" onclick="addToCart('Pure Scorpion', 499.99, 'Bags Category/Bag 5.jpg')">Add to Cart</button>
+    </div>
+
+    <div class="grid-item">
+      <img src="Bags Category/Bag 6.jpg" alt="Product 6">
+      <h2>Swallowtail White&nbsp;&nbsp;</h2>
+      <p class="price">MYR499.99</p>
+      <p><a href="product.html?category=bags&productId=6" class="view-details">View Details</a></p>
+      <button class="add-to-cart" onclick="addToCart('Swallowtail White', 499.99, 'Bags Category/Bag 6.jpg')">Add to Cart</button>
+    </div>
+
+	<div class="grid-item">
+  	  <img src="Bags Category/Bag 7.jpg" alt="Product 7">
+  	  <h2>World's End (Limited Edition)</h2>
+  	  <p class="price">MYR299.99</p>
+  	  <p><a href="product.html?category=bags&productId=7" class="view-details">View Details</a></p>
+  	  <button class="add-to-cart" onclick="addToCart('World\'s End (Limited Edition)', 299.99, 'Bags Category/Bag 7.jpg')">Add to Cart</button>
+	</div>
+
+
+    <div class="grid-item">
+      <img src="Bags Category/Bag 8.jpg" alt="Product 8">
+      <h2>bagsBlack Estoc Laptop Bag</h2>
+      <p class="price">MYR699.99</p>
+      </p><a href="product.html?category=bags&productId=8" class="view-details">View Details</a>
+      <button class="add-to-cart" onclick="addToCart('Black Estoc Laptop Bag', 699.99, 'Bags Category/Bag 8.jpg')">Add to Cart</button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-column">
+      <h3>Support</h3>
+      <a href="contact.html">Contact</a>
+      <a href="size_guide.html">Size Guide</a> 
+    </div>
+
+    <div class="footer-column">
+      <h3>Shop</h3>
+      <a href="jacketscat.html">Jackets</a>
+      <a href="bottomcat.html">Bottoms</a>
+      <a href="accessoriescat.html">Accessories</a>
+      <a href="walletscat.html">Wallets</a>
+      <a href="bagscat.html">Bags</a>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="footer-logo">
+        <img src="arkived.png" alt="Footer Logo">
+      </div>
+      <div class="payment-options">
+        <img src="Front Page images/apple pay.png" alt="Apple Pay">
+        <img src="Front Page images/paypal.png" alt="Paypal">
+        <img src="Front Page images/visa.png" alt="Visa">
+      </div>
+      <p>&copy; 2024 arKived. Powered by Shopify</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript for Cart Functionality -->
+  <script src="cartHandler.js"></script>
+
+</body>
+</html>

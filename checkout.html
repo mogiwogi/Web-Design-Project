@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="checkout.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="header-left">
+            <a href="index.html" class="logo">
+                <img src="arkived.png" alt="Logo">
+            </a>
+        </div>
+        <h1>Checkout</h1>
+    </header>
+
+    <!-- Cart Items Section -->
+    <section class="cart-container">
+        <h2>Your Cart</h2>
+        <div id="cart-item-list" class="cart-item-list">
+            <!-- Items will be dynamically populated using localStorage -->
+        </div>
+    </section>
+
+    <!-- Billing and Payment Form -->
+    <section class="billing-container">
+        <h2>Billing Information</h2>
+        <form class="billing-form" action="checkout.php" method="POST">
+            <!-- Hidden field to store the cart as a JSON string -->
+            <input type="hidden" id="cart_data" name="cart_data">
+
+            <label for="full-name">Full Name:</label>
+            <input type="text" id="full-name" name="full-name" placeholder="John Doe" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="john.doe@example.com" required>
+
+            <label for="address">Shipping Address:</label>
+            <textarea id="address" name="address" placeholder="1234 Street Name, City, Country" rows="3" required></textarea>
+
+            <h3>Payment Method</h3>
+            <label>
+                <input type="radio" name="payment-method" value="paypal" required>
+                PayPal
+            </label>
+            <label>
+                <input type="radio" name="payment-method" value="apple-pay" required>
+                Apple Pay
+            </label>
+            <label>
+                <input type="radio" name="payment-method" value="visa" required>
+                Visa
+            </label>
+
+            <div id="card-details">
+                <label for="card-number">Card Number:</label>
+                <input type="text" id="card-number" name="card-number" placeholder="1234 5678 9012 3456" maxlength="19" required>
+
+                <label for="expiry-date">Expiry Date:</label>
+                <input type="text" id="expiry-date" name="expiry-date" placeholder="MM/YY" maxlength="5" required>
+
+                <label for="cvv">CVV:</label>
+                <input type="text" id="cvv" name="cvv" placeholder="123" maxlength="3" required>
+            </div>
+
+            <button type="submit" class="confirm-order-button">Confirm Order</button>
+        </form>
+    </section>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            // Retrieve cart data from localStorage
+            const cart = JSON.parse(localStorage.getItem("cart")) || [];
+            const cartItemList = document.getElementById("cart-item-list");
+            const cartDataInput = document.getElementById("cart_data");
+
+            // Clear current cart display
+            cartItemList.innerHTML = "";
+
+            if (cart.length === 0) {
+                cartItemList.innerHTML = "<p>Your cart is empty.</p>";
+            } else {
+                // Display cart items
+                cart.forEach((item) => {
+                    const cartItem = document.createElement("div");
+                    cartItem.classList.add("cart-item");
+                    cartItem.innerHTML = `
+                        <div class="cart-item-details">
+                            <img src="${item.image}" alt="${item.name}" class="cart-item-image">
+                            <div>
+                                <h2>${item.name}</h2>
+                                <p>Price: MYR${item.price.toFixed(2)}</p>
+                                <p>Quantity: ${item.quantity}</p>
+                            </div>
+                        </div>
+                    `;
+                    cartItemList.appendChild(cartItem);
+                });
+
+                // Pass cart data as JSON string to hidden field
+                cartDataInput.value = JSON.stringify(cart);
+            }
+        });
+    </script>
+
+</body>
+</html>

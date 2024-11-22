@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Design</title>
+    <link rel="stylesheet" href="custom_design_styles.css">
+</head>
+<body>
+    <header>
+        <div class="back-link">
+            <a href="javascript:history.back()">Back</a>
+        </div>
+    </header>
+
+    <section class="custom-design-container">
+        <h1>Custom Design</h1>
+        <p>We offer custom design services tailored to your requests. Please fill out the form below with your design requirements, and our team will get in touch with you to bring your vision to reality.</p>
+        
+    <form action="submit_custom_design.php" method="POST" enctype="multipart/form-data">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email Address</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="design-details">Design Details</label>
+    <textarea id="design-details" name="design-details" rows="5" required></textarea>
+	
+    <label for="attachment">Add an Attachment</label>
+    <input type="file" id="attachment" name="attachment" accept="image/*,application/pdf">
+	
+    <label for="budget">Budget (optional)</label>
+    <input type="text" id="budget" name="budget">
+	
+    <button type="submit">Submit Request</button>
+</form>
+
+<script>
+    function redirectToThankYou(event) {
+        event.preventDefault(); // Prevents the form's default submission
+        window.location.href = "thank_you(cd).html"; // Redirects to the thank you page
+    }
+</script>
+		
+    </section>
+</body>
+</html>

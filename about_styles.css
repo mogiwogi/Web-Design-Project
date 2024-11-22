@@ -1,0 +1,71 @@
+/* Position the Back Link near the top-left corner */
+.back-link {
+    position: absolute;
+    top: 50px;
+    left: 120px;
+    z-index: 20; /* Ensure it stays on top of other elements */
+}
+
+/* Centered Logo Section */
+.header-section {
+    display: flex;
+    justify-content: center; /* Centers the logo in the header section */
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.back-link a {
+    color: black;
+    font-weight: bold;
+    text-decoration: underline; /* Underlines the link */
+}
+
+.back-link a:hover {
+    color: darkblue;
+}
+
+.logo-image {
+    max-width: 200px;
+    height: auto;
+}
+
+/* About Us Content Section with Dark Red Glow */
+.about-content {
+    margin: 50px auto;
+    max-width: 600px;
+    padding: 20px;
+    border: 1px solid black;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(139, 0, 0, 0.8); /* Dark red glow around the border */
+}
+
+/* Decorative Corner Images */
+.corner {
+    position: absolute;
+    width: 100px; /* Adjust size as needed */
+    height: auto;
+    z-index: 10;
+}
+
+.top-left {
+    top: 0;
+    left: 0;
+}
+
+.top-right {
+    top: 0;
+    right: 0;
+    transform: scaleX(-1); /* Flip horizontally for symmetry */
+}
+
+.bottom-left {
+    bottom: 0;
+    left: 0;
+    transform: scaleY(-1); /* Flip vertically for symmetry */
+}
+
+.bottom-right {
+    bottom: 0;
+    right: 0;
+    transform: scaleX(-1) scaleY(-1); /* Flip both horizontally and vertically */
+}

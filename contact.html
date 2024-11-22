@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contact_styles.css">
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</head>
+<body>
+
+    <!-- Back link -->
+    <header>
+        <div class="back-link">
+            <a href="javascript:void(0);" onclick="goBack()">Back</a>
+        </div>
+    </header>
+
+    <!-- Contact Container -->
+    <section class="contact-container">
+        <h1>Contact Us</h1>
+        <p>We’re here to help. Fill out the form below, and we’ll get back to you as soon as possible.</p>
+
+        <!-- Contact Form -->
+        <form action="contact_admin.php" method="post">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone">
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+</body>
+</html>

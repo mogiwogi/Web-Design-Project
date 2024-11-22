@@ -1,0 +1,64 @@
+/* General Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  text-align: center;
+}
+
+/* Back Link */
+.back-link {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+/* Logo */
+.logo {
+  margin: 20px auto;
+  max-width: 150px;
+  height: 100px; /* Fixed height */
+}
+
+.logo img {
+  width: 150px; /* Fixed width */
+  height: 100px; /* Fixed height */
+  object-fit: contain; /* Ensures the image scales correctly within the fixed dimensions */
+}
+
+/* Size Guide Content */
+.size-guide-content {
+  margin: 50px auto;
+  max-width: 800px;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.size-guide-content h1 {
+  margin-top: 0;
+}
+
+.size-guide-content p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Size Guide Image */
+.size-guide-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}

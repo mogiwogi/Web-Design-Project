@@ -1,0 +1,115 @@
+/* General Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header .back-link {
+    margin: 20px;
+  }
+  
+  header .back-link a {
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  .login-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .login-container {
+    background: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .login-container h1 {
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: #333;
+    text-align: center;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 8px;
+    color: #555;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .form-group .password-toggle {
+    position: absolute;
+    right: 10px;
+    top: 40px;
+    cursor: pointer;
+  }
+  
+  .login-btn {
+    background-color: #333;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .login-btn:hover {
+    background-color: #555;
+  }
+  
+  .form-links, .signup-link {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .form-links a, .signup-link a {
+    color: #6c63ff;
+    text-decoration: none;
+  }
+  
+  .signup-link {
+    margin-top: 10px;
+  }
+  
+/* Notification Popup */
+.notification {
+    display: none;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ff4c4c;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.notification.show {
+    display: block;
+}
+  

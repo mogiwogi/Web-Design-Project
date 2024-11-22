@@ -1,0 +1,192 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a; /* Dark background */
+    color: #ddd;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Section */
+header {
+    background-color: #0d0d0d; /* Darker black-like shade */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+header .logo {
+    position: absolute;
+    left: 20px;
+    width: 60px; /* Increased size */
+    height: 60px; /* Increased size */
+
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+/* New Arrivals Container */
+.new-arrivals-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 items per row */
+    gap: 20px;
+    padding: 40px;
+    background-color: #1a1a1a; /* Same as body background for seamless effect */
+}
+
+/* Grid Item Styles */
+.grid-item {
+    background-color: #2b2b2b; /* Slightly lighter grey for grid items */
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.grid-item h2 {
+    font-size: 1.5rem;
+    color: #fff;
+    margin: 10px 0;
+}
+
+.grid-item:hover {
+    transform: scale(1.05);
+}
+
+/* Release Date Styling */
+.release-date {
+    font-size: 1.2rem;
+    color: #fbc02d; /* Accent color */
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Back Button Styling */
+.back-button-container {
+    text-align: left;
+    padding: 20px 40px;
+}
+
+.back-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #1a1a1a;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.back-button:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .new-arrivals-container {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        padding: 20px;
+    }
+
+    .grid-item h2 {
+        font-size: 1.2rem;
+    }
+
+    .release-date {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .grid-item h2 {
+        font-size: 1rem;
+    }
+
+    .release-date {
+        font-size: 0.9rem;
+    }
+}
+
+/* Intro Section */
+.intro-section {
+    text-align: center;
+    padding: 30px 20px;
+    background-color: #1e1e1e; /* Background color */
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.intro-image {
+    width: 850px; /* Set desired width */
+    height: 300px; /* Set desired height */
+    object-fit: cover;
+    margin-bottom: 15px;
+    display: block; /* Make image a block element */
+    margin-left: auto; /* Center align */
+    margin-right: auto; /* Center align */
+}
+
+/* Footer Styles */
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  background-color: #000;
+  color: #bbb;
+}
+
+footer .footer-column {
+  display: flex;
+  flex-direction: column;
+}
+
+footer .footer-column h3 {
+  margin-bottom: 10px;
+  color: white;
+}
+
+footer .footer-column a {
+  color: #bbb;
+  text-decoration: none;
+  margin-bottom: 8px;
+}
+
+footer .footer-column a:hover {
+  color: #fbc02d;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.footer-logo img {
+  max-width: 180px;
+}
+
+.payment-options img {
+  width: 40px;
+  margin: 0 10px;
+}

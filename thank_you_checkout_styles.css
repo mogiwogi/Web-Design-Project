@@ -1,0 +1,80 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Back Link Styling */
+.back-link {
+  width: 100%;
+  text-align: left;
+  padding: 10px 20px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.back-link a {
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.back-link a:hover {
+  color: #0000EE;
+  text-decoration: underline;
+}
+
+/* Thank You Container */
+.thank-you-container {
+  max-width: 500px;
+  width: 100%;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Logo Container */
+.logo-container img {
+  width: 100px; /* Adjust to fit your logo */
+  height: auto;
+  margin-bottom: 20px;
+}
+
+/* Message Box */
+.message-box h1 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.message-box p {
+  font-size: 0.9em;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Back Button */
+.back-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333; /* Dark grey */
+  color: #fff;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.back-button:hover {
+  background-color: #555;
+}
